@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/testcors', function(Request $request){
+    return response()->json(['Hello Laravel 7']);
+});
+
 // Product Resource
 Route::resource('products','API\ProductController');
 
